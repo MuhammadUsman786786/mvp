@@ -1,0 +1,12 @@
+{
+  "testRunner": "mocha",
+  "runnerConfig": "e2e/.mocharc.json",
+  "configurations": {
+    "ios": {
+      "binaryPath": "ios/build/Build/Products/Release-iphonesimulator/AwesomeProject.app",
+      "build": "xcodebuild -workspace ios/AwesomeProject.xcworkspace -scheme AwesomeProject -configuration Release -sdk iphonesimulator -derivedDataPath ios/build",
+      "type": "ios.simulator",
+      "name": "iPhone 8"
+    }
+  }
+}
